@@ -1,22 +1,25 @@
 {
-  "name": "Phoenix",
+  "name": "phoenix",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ui-market.com",
-  "license": "",
+  "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^5.2.0",
     "clone": "^1.0.2",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-base64": "^0.1.3",
     "gulp-concat": "^2.5.2",
+    "gulp-connect": "^5.0.0",
     "gulp-file-include": "^0.13.5",
     "gulp-imagemin": "^2.4.0",
+    "gulp-install": "^0.6.0",
     "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^5.1.8",
     "gulp-rename": "^1.2.2",
@@ -32,10 +35,23 @@
     "gulp-autoprefixer": "^2.3.1",
     "gulp-babel": "^5.1.0",
     "gulp-imagemin": "^2.3.0",
+    "gulp-install": "^0.6.0",
     "gulp-sass": "^2.0.4",
     "gulp-size": "^1.2.3",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-watch": "^4.3.3",
     "imagemin-pngquant": "^4.1.2"
-  }
+  },
+  "description": "Source code of my website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n1ghtcoder/nightcoder.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "bugs": {
+    "url": "https://github.com/n1ghtcoder/nightcoder/issues"
+  },
+  "homepage": "https://github.com/n1ghtcoder/nightcoder#readme"
 }

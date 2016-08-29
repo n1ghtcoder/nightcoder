@@ -1,4 +1,4 @@
-var gulp = require('gulp');
+var gulp = require('gulp'), connect = require('gulp-connect');
 var sass = require('gulp-sass');
 var size = require('gulp-size'); //shows the size of the entire project or files
 var autoprefixer = require('gulp-autoprefixer');
@@ -31,7 +31,8 @@ gulp.task('css', function() {
 			cascade: false
 		}))
 		.pipe(size())
-		.pipe(gulp.dest('build/css'));
+		.pipe(gulp.dest('build/css'))
+		.pipe(connect.reload());
 });
 
 // js
@@ -91,3 +92,16 @@ gulp.task('dev:watch', function () {
 });
 
 gulp.task('compile', ['css', 'main_js', 'compress_img', 'jade']);
+
+gulp.task('webserver', function() {
+	connect.server({
+		livereload: true,
+		open: true,
+		directoryListing: true,
+		root: 'build',
+		port: '1337',
+		host: 'nc.dev'
+	});
+});
+
+gulp.task('default', ['webserver', 'dev:watch']);
