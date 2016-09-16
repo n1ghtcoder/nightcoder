@@ -1,3 +1,61 @@
 .cover-me {
-  background: green;
+  padding: 0;
+  //min-height: 100vh !important;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f9f1e9 , #dcd4cc);
+  color: #333;
+  .v-table {
+    position: relative;
+    //z-index: 999;
+  }
+  .desk {
+    position: relative;
+    width: 90%;
+    max-width: 750px;
+    .wow {
+      opacity: 1 !important;
+    }
+    .intro-text {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 120%;
+    }
+  }
+  .container {
+    padding: 0;
+  }
+  .v-top {
+    padding-top: 5rem;
+  }
+  img {
+    width: 100%;
+  }
+  .button--play-icon {
+    z-index: 9999;
+  }
+}
+
+.works--03 {
+  .works__item {
+    width: auto;
+  }
+  img {
+    max-height: 400px;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+.header {
+  position: fixed;
+  z-index: 99;
+}
+
+.menu {
+  z-index: 999999;
+}
+
+.typed-container {
+  white-space: pre-line;
 }

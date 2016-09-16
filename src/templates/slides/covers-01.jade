@@ -1,11 +1,28 @@
 // == START OF COVER 01 ==
 .cover.cover--01.js-cover.cover-me
-    .container
-        h2.cover__title--01
-            span.cover__title_text--01
-                | Yuriy Kovalev
-        .cover__description_box--01
-            span.about-title
-                | Front-end Developer
-    .cover__pic_box--01(style="background-image: url(img/stuff/table.jpg)")
+    .v-table
+        .v-row
+            .v-cell.v-middle
+                .welcome-text
+                    .typed-container
+                        span.text-1
+                //.cover__content_box
+                    .cover__image_box--10
+                        .cover__button_box--10.wow.zoomIn(data-wow-delay="3s")
+                            button.cover__button--10.button.button--blue.button--blue-shadow.button--round.button--play-icon.js-open-popup(data-popup-target="video", type="button")
+                        img.cover__image.img-fluid.img-rounded.wow.slideInDown(src="http://www.showreel.org.uk/uploads/slider/photo-1429051883746-afd9d56fbdaf.jpg", data-wow-delay="2s")
+        .v-row
+            .v-cell.v-bottom
+                .desk.unselectable.container(data-limit-y="0.001")
+                    img.layer.wow.slideInUp(src='img/stuff/desk.png', data-depth="0.2", data-wow-delay="100ms")
+                    div.layer.absolute-full(data-depth="0.2")
+                        img.absolute-full.wow.slideInUp(src='img/stuff/ipad.png', data-wow-delay="200ms")
+                        img.absolute-full.wow.slideInUp(src='img/stuff/macbook.png', data-wow-delay="250ms")
+                        img.absolute-full.wow.slideInUp(src='img/stuff/iphone.png', data-wow-delay="300ms")
+                        img.absolute-full.wow.slideInUp(src='img/stuff/camera.png', data-wow-delay="350ms")
+                    div.layer.absolute-full(data-depth="1.0")
+                        //span 228
+                        img.absolute-full.wow.slideInRight(src='img/stuff/chair.png', data-wow-delay="1.2s")
 // == END OF COVER 01 ==
+button.intro__scroll_box.js-scroll-fullscreen.intro_appears_last(type='button')
+

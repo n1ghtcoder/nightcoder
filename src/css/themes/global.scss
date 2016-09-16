@@ -1,0 +1,152 @@
+.text-blue {
+  color: $sky;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+.v-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  .v-row {
+    display: table-row;
+    height: 100%;
+    .v-cell {
+      display: table-cell;
+    }
+  }
+}
+.v-bottom { vertical-align: bottom; }
+.v-middle { vertical-align: middle; }
+.v-top { vertical-align: top; }
+
+.w100 { width: 100%; }
+.h100 { height: 100%; }
+
+.bg-contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.absolute-full {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+.unselectable {
+  user-select: none;
+  pointer-events: none;
+}
+
+/*.sliding-bg {
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translate3d(0, 0, 0);
+  transition: background-color 3s ease-in-out 2s;
+  perspective: 1000px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  &:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: url(http://semantic-ui.com/images/ui.png);
+    transform-origin: 0% 0%;
+    transform-style: preserve-3d;
+    animation-name: splash;
+    transition: opacity 3s ease-in-out, transform 5s ease-in-out;
+    opacity: 0.1;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: rotateX(30deg) rotateZ(0deg) rotateY(0deg) translateY(0) translateX(0) translateZ(10px);
+  }
+}*/
+
+@keyframes splash {
+  0% {
+    background-position: center 0;
+  }
+  100% {
+    background-position: center -475px;
+  }
+}
+
+html, body {
+  height: 100vh;
+}
+
+
+body {
+  overflow: hidden;
+}
+
+
+/* Preloader */
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background: linear-gradient(to bottom, #f9f1e9 , #e4dcd4);
+  .jelly {
+    animation: loader 5s linear infinite;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    .box {
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      animation: jelly .5s linear infinite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 3px;
+    }
+    .shadow {
+      width: 50px;
+      height: 5px;
+      background: #000;
+      opacity: 0.1;
+      position: absolute;
+      top: 59px;
+      left: 0;
+      border-radius: 50%;
+      animation: shadow .5s linear infinite;
+    }
+  }
+}
