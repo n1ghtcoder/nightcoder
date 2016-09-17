@@ -457,7 +457,24 @@ $(window).load(function() { // makes sure the whole site is loaded
                 typeSpeed: 30
             });
         });
+
+        $(function () {
+            $(".text-2").typed({
+                strings: ["write at me dot com"],
+                showCursor: false,
+                typeSpeed: 30
+            });
+        });
     }, 2000);
+
+    // Email protection
+    $(function() {
+        $('a[href^="mailto:"]').each(function() {
+            this.href = this.href.replace('(at)', '@').replace(/\(dot\)/g, '.');
+            // Remove this line if you don't want to set the email address as link text:
+            this.innerHTML = this.href.replace('mailto:', '');
+        });
+    });
 
 
 });
