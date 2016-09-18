@@ -13,19 +13,49 @@ html
 		title
 			| Night Coder | Front-End Developer
 	body
+		script(type='text/javascript').
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function () {
+					try {
+						w.yaCounter32612170 = new Ya.Metrika({
+							id: 32612170,
+							clickmap: true,
+							trackLinks: true,
+							accurateTrackBounce: true,
+							webvisor: true
+						});
+					} catch (e) {
+					}
+				});
+				var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+					n.parentNode.insertBefore(s, n);
+				};
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://mc.yandex.ru/metrika/watch.js";
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else {
+					f();
+				}
+			})(document, window, "yandex_metrika_callbacks");
+		noscript
+			div
+				img(src='https://mc.yandex.ru/watch/32612170', style='position:absolute; left:-9999px;', alt='')
+
 		main
 			include slides/loader
 			include slides/header-02
 			include slides/covers-01
 			include slides/about-07
 			include slides/works-01
-			//include components/contents/05
-			include slides/counters-01
+			//include slides/counters-01
 			include slides/testimonials-04
+			include slides/call-to-actions-02
 			//include slides/partners-01
 			//include slides/prices-01
 			include slides/works-03
-			include slides/menu-02
+			//include slides/menu-02
 
 			//include components/footers/04
 			//include components/popups/video

@@ -1,6 +1,5 @@
-.text-blue {
-  color: $sky;
-}
+.text-blue { color: $sky; }
+.text-white { color: #fff; }
 
 .centered {
   margin-left: auto;
@@ -147,6 +146,26 @@ body {
       left: 0;
       border-radius: 50%;
       animation: shadow .5s linear infinite;
+    }
+  }
+}
+
+.hover-1 {
+  position: relative;
+  text-decoration: none !important;
+  transition: all .2s ease-out;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom: 1px solid;
+    transition: all .2s ease-out;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
     }
   }
 }

@@ -95,7 +95,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 $filters.removeClass('button--black').addClass('button--gray');
                 $(this).addClass('button--black');
             });
-        }
+        };
 
         var init = function () {
             //bind filtering buttons color change:
@@ -447,22 +447,10 @@ $(window).load(function() { // makes sure the whole site is loaded
     setTimeout(function () {
         $('.desk').parallax();
 
-
-
-
         $(function () {
             $(".text-1").typed({
-                strings: ["Hi!^1000\nI'm Yuriy Kovalev^300,\nFront-End Developer^500, explorer^500, and dreamer^500.^500.^500.^1000"],
-                showCursor: true,
-                typeSpeed: 30
-            });
-        });
-
-        $(function () {
-            $(".text-2").typed({
-                strings: ["write at me dot com"],
-                showCursor: false,
-                typeSpeed: 30
+                strings: ["Hi!^1000\nI'm Yuriy Kovalev^300,\nFront-End Developer^100, explorer^100, and dreamer..."],
+                showCursor: true
             });
         });
     }, 2000);
@@ -476,5 +464,50 @@ $(window).load(function() { // makes sure the whole site is loaded
         });
     });
 
-
 });
+
+
+
+$(function() {
+    $('.call_to_action__form').submit(function(event) {
+        event.preventDefault();
+
+        var formEl = $(this);
+        var submitButton = $('input[type=submit]', formEl);
+
+        $.ajax({
+            type: 'POST',
+            url: formEl.prop('action'),
+            accept: {
+                javascript: 'application/javascript'
+            },
+            data: formEl.serialize(),
+            beforeSend: function() {
+                submitButton.prop('disabled', 'disabled');
+            }
+        }).done(function(data) {
+            submitButton.prop('disabled', false);
+            $('.call_to_action__form').addClass('success')[0].reset();
+
+            $(function () {
+                $(".call_to_action__form .text-after").typed({
+                    strings: ["Super!^300", "I'll contact you shortly^3000", "Send^3000"],
+                    typeSpeed: 30,
+                    showCursor: false
+                });
+            });
+
+            yaCounter32612170.reachGoal('CONTACT');
+
+        });
+    });
+});
+
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-23658638-2', 'auto');
+ga('send', 'pageview');
