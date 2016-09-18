@@ -449,8 +449,9 @@ $(window).load(function() { // makes sure the whole site is loaded
 
         $(function () {
             $(".text-1").typed({
-                strings: ["Hi!^1000\nI'm Yuriy Kovalev^300,\nFront-End Developer^100, explorer^100, and dreamer..."],
-                showCursor: true
+                strings: ["Hi!^1000\nI'm Yuriy Kovalev^300,\nFront-End Developer^300, explorer^300, dreamer^300.^300.^300."],
+                showCursor: true,
+                typeSpeed: 30
             });
         });
     }, 2000);

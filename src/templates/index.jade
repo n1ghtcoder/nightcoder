@@ -1,15 +1,15 @@
 doctype html
 html
 	head
-		//the must have tags
 		meta(charset="utf-8")
 		meta(name="viewport" content="width=device-width")
-
-		//the must have assets
+		meta(property='og:url', content='http://nightcoder.name')
+		meta(property='og:type', content='website')
+		meta(property='og:title', content='Night Coder')
+		meta(property='og:description', content='Front-End Developer, explorer, dreamer...')
+		meta(property='og:image', content='img/stuff/social.jpg')
 		link(rel="stylesheet", href="css/main.css")
 		script(src="js/main.js", defer)
-
-		//page title
 		title
 			| Night Coder | Front-End Developer
 	body
@@ -45,7 +45,7 @@ html
 
 		main
 			include slides/loader
-			include slides/header-02
+			//include slides/header-02
 			include slides/covers-01
 			include slides/about-07
 			include slides/works-01

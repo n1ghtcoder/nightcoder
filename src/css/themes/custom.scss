@@ -72,7 +72,7 @@
   text-align: center;
   .about__photo {
     display: inline-block;
-    margin: 2rem auto 3rem;
+    margin: 1rem auto 3rem;
   }
   padding: 70px 0;
   .about__main_info--07 {
@@ -139,6 +139,23 @@
     }
     .text-after {
       display: inline-block;
+    }
+  }
+}
+
+.slider-container {
+  position: relative;
+  @media (max-width: 500px) {
+    .testimonials__arrows_box--04 {
+      display: block !important;
+      top: 94px !important;
+      pointer-events: none;
+      button {
+        pointer-events: all;
+      }
+    }
+    .testimonials__item_photo {
+
     }
   }
 }

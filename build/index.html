@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--the must have tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <!--the must have assets-->
+    <meta property="og:url" content="http://nightcoder.name">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Night Coder">
+    <meta property="og:description" content="Front-End Developer, explorer, dreamer...">
+    <meta property="og:image" content="img/stuff/social.jpg">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js" defer></script>
-    <!--page title-->
     <title>Night Coder | Front-End Developer</title>
   </head>
   <body>
@@ -48,13 +50,7 @@
           <div class="box"></div>
         </div>
       </div>
-      <nav class="header header--02">
-        <div class="container header__container">
-          <div class="header__middle_box"><a href="mailto:write(at)me(dot)com" title="Say hi!" onclick="yaCounter32612170.reachGoal('CLICK-EMAIL-TOP'); return true;" class="hover-1"></a></div>
-          <!--.header__right_boxbutton.header__burger_button.header__burger_button--black.js-open-menu(type="button", data-menu-index="02--desktop")
-          -->
-        </div>
-      </nav>
+      <!--include slides/header-02-->
       <div class="cover cover--01 js-cover cover-me">
         <div class="v-table">
           <div class="v-row">
@@ -82,7 +78,8 @@
       </div>
       <div class="about about--07">
         <div class="container">
-          <div class="works__title about__title--07">About me</div>
+          <!--.works__title.about__title--07| About me
+          -->
           <!--.about__container--07(style="background-image: url(img/bg/bg--bright-room.jpg)")
           .about__content--07
           	.about__content__top_row--07
@@ -112,7 +109,7 @@
           </div>
           <div class="row text-center">
             <div class="col-sm-12 col-md-4">
-              <h3 class="about__subtitle--07 about__main_subtitle--07">In short</h3>
+              <h3 class="about__subtitle--07 about__main_subtitle--07">About me</h3>
               <div class="about__main_info--07">I was born and raised in Lipetsk, Russia<br>I'm 23 years old<br>I love exploring and taking photos<br>Blue is my favorite color</div>
             </div>
             <div class="col-sm-12 col-md-4">
@@ -126,7 +123,6 @@
           </div>
         </div>
       </div>
-      <!-- == START OF WORKS 01 ==-->
       <div class="works works--01">
         <div class="container">
           <div class="works__title_box">
@@ -169,41 +165,42 @@
             </div></a></div>
         <button onclick="yaCounter32612170.reachGoal('CLICK-VIEWMORE'); return true;" class="works__show_more_button--01 button button--border-black js-show-more-works">view more</button>
       </div>
-      <!-- == END OF WORKS 01 ==-->
       <!--include slides/counters-01-->
       <div class="testimonials testimonials--04">
         <div class="works__title">My happy clients</div>
         <div class="works__text">This is only a small part of the reviews about my&nbsp;<a target="_blank" href="http://www.upwork.com/o/profiles/users/_~01c29dcb38d78fba62" onclick="yaCounter32612170.reachGoal('CLICK-UPWORK'); return true;" class="hover-1">Upwork</a>&nbsp;profile</div>
-        <div class="testimonials__arrows_box testimonials__arrows_box--04">
-          <button type="button" onclick="yaCounter32612170.reachGoal('CLICK-REVIEWS-LEFT'); return true;" class="testimonials__arrow testimonials__arrow--left testimonials__arrow--04 testimonials__arrow--04--left js-testimonials-prev-arrow--04"></button>
-          <button type="button" onclick="yaCounter32612170.reachGoal('CLICK-REVIEWS-RIGHT'); return true;" class="testimonials__arrow testimonials__arrow--right testimonials__arrow--04 testimonials__arrow--04--right js-testimonials-next-arrow--04"></button>
-        </div>
-        <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;arrows&quot;: false, &quot;asNavFor&quot;: &quot;.js-testimonials-text-slider&quot;, &quot;centerMode&quot;: true, &quot;focusOnSelect&quot;: true, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 500, &quot;settings&quot;: {&quot;slidesToShow&quot;: 3, &quot;centerMode&quot;: false}}]}" class="testimonials__photos_box--04 js-slider js-testimonials-photo-slider">
-          <div class="testimonials__item_photo_box--04">
-            <div style="background-image:url(img/clients/vlad.jpg)" class="testimonials__item_photo testimonials__item_photo--04"></div>
+        <div class="slider-container">
+          <div class="testimonials__arrows_box testimonials__arrows_box--04">
+            <button type="button" onclick="yaCounter32612170.reachGoal('CLICK-REVIEWS-LEFT'); return true;" class="testimonials__arrow testimonials__arrow--left testimonials__arrow--04 testimonials__arrow--04--left js-testimonials-prev-arrow--04"></button>
+            <button type="button" onclick="yaCounter32612170.reachGoal('CLICK-REVIEWS-RIGHT'); return true;" class="testimonials__arrow testimonials__arrow--right testimonials__arrow--04 testimonials__arrow--04--right js-testimonials-next-arrow--04"></button>
           </div>
-          <div class="testimonials__item_photo_box--04">
-            <div style="background-image:url(img/clients/mathias.jpg)" class="testimonials__item_photo testimonials__item_photo--04"></div>
+          <div data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;arrows&quot;: false, &quot;asNavFor&quot;: &quot;.js-testimonials-text-slider&quot;, &quot;centerMode&quot;: true, &quot;focusOnSelect&quot;: true, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 500, &quot;settings&quot;: {&quot;slidesToShow&quot;: 1}}]}" class="testimonials__photos_box--04 js-slider js-testimonials-photo-slider">
+            <div class="testimonials__item_photo_box--04">
+              <div style="background-image:url(img/clients/vlad.jpg)" class="testimonials__item_photo testimonials__item_photo--04"></div>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <div style="background-image:url(img/clients/mathias.jpg)" class="testimonials__item_photo testimonials__item_photo--04"></div>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <div style="background-image:url(img/clients/corey.jpg)" class="testimonials__item_photo testimonials__item_photo--04"></div>
+            </div>
+            <div class="testimonials__item_photo_box--04">
+              <div style="background-image:url(img/clients/mohamad.jpg)" class="testimonials__item_photo testimonials__item_photo--04"></div>
+            </div>
           </div>
-          <div class="testimonials__item_photo_box--04">
-            <div style="background-image:url(img/clients/corey.jpg)" class="testimonials__item_photo testimonials__item_photo--04"></div>
-          </div>
-          <div class="testimonials__item_photo_box--04">
-            <div style="background-image:url(img/clients/mohamad.jpg)" class="testimonials__item_photo testimonials__item_photo--04"></div>
-          </div>
-        </div>
-        <div data-slick="{&quot;slidesToShow&quot;: 1, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: true, &quot;cssEase&quot;: &quot;linear&quot;, &quot;arrows&quot;: true, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--04&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--04&quot;, &quot;asNavFor&quot;: &quot;.js-testimonials-photo-slider&quot;}" class="testimonials__box testimonials__box--04 js-slider js-testimonials-text-slider">
-          <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Yuriy is a very talented developer. He always finishes tasks ahead of schedule. This guy is so fast with tasks that I can hardly keep up. He also has amazing attention to detail and even suggests a lot of improvements and optimizations.</span>
-            <div class="testimonials__rating_box"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"></div><span class="testimonials__item_name">Vlad Bretgoltz</span>
-          </div>
-          <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Yuriy is an excellent freelancer, who pays attention to details.<br>Really good work!</span>
-            <div class="testimonials__rating_box"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"></div><span class="testimonials__item_name">Mathias Briquemont</span>
-          </div>
-          <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Yuriy was fantastic to work with! Very communicative, attentive and gets the job done ahead of schedule. I would highly recommend Yuriy to anyone looking for front-end development using the Bootstrap framework. Will definitely be hiring again and again!!!</span>
-            <div class="testimonials__rating_box"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"></div><span class="testimonials__item_name">Corey Lewis</span>
-          </div>
-          <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">He did good job just the time he was sick but he did his work outstanding!</span>
-            <div class="testimonials__rating_box"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"></div><span class="testimonials__item_name">Mohamad Tellawi</span>
+          <div data-slick="{&quot;slidesToShow&quot;: 1, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: true, &quot;cssEase&quot;: &quot;linear&quot;, &quot;arrows&quot;: true, &quot;prevArrow&quot; : &quot;.js-testimonials-prev-arrow--04&quot;, &quot;nextArrow&quot;: &quot;.js-testimonials-next-arrow--04&quot;, &quot;asNavFor&quot;: &quot;.js-testimonials-photo-slider&quot;}" class="testimonials__box testimonials__box--04 js-slider js-testimonials-text-slider">
+            <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Yuriy is a very talented developer. He always finishes tasks ahead of schedule. This guy is so fast with tasks that I can hardly keep up. He also has amazing attention to detail and even suggests a lot of improvements and optimizations.</span>
+              <div class="testimonials__rating_box"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"></div><span class="testimonials__item_name">Vlad Bretgoltz</span>
+            </div>
+            <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Yuriy is an excellent freelancer&nbsp;<br>who pays attention to details.<br>Really good work!</span>
+              <div class="testimonials__rating_box"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"></div><span class="testimonials__item_name">Mathias Briquemont</span>
+            </div>
+            <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">Yuriy was fantastic to work with! Very communicative, attentive and gets the job done ahead of schedule. I would highly recommend Yuriy to anyone looking for Front-End development using the Bootstrap framework.<br>Will definitely be hiring again and again!!!</span>
+              <div class="testimonials__rating_box"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"></div><span class="testimonials__item_name">Corey Lewis</span>
+            </div>
+            <div class="testimonials__item testimonials__item--04"><span class="testimonials__item_text testimonials__item_text--04">He did good job just the time he was sick but he did his work outstanding!</span>
+              <div class="testimonials__rating_box"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"><img src="img/icons/i--star--blue--solid.svg" class="testimonials__rating_star"></div><span class="testimonials__item_name">Mohamad Tellawi</span>
+            </div>
           </div>
         </div>
       </div>
@@ -221,7 +218,6 @@
       </div>
       <!--include slides/partners-01-->
       <!--include slides/prices-01-->
-      <!-- == START OF WORKS 03 ==-->
       <div class="works works--03">
         <div class="container">
           <div class="works__title_box">
@@ -232,13 +228,18 @@
         <div data-slick="{&quot;slidesToShow&quot;: 5, &quot;slidesToScroll&quot;: 1, &quot;fade&quot;: false, &quot;cssEase&quot;: &quot;linear&quot;, &quot;arrows&quot;: false, &quot;centerMode&quot;: false, &quot;focusOnSelect&quot;: true, &quot;variableWidth&quot;: true, &quot;autoplay&quot;: true, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 1400, &quot;settings&quot;: {&quot;centerMode&quot;: true}}]}" class="works__slider js-slider">
           <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1461884430365-0a87b6123549?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
           <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1461857710142-3e7ace00f9f4?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
-          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1461884565039-631924867711?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
-          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
-          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1461885283715-7851eba48c56?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
           <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1461899414075-b4a7da56143d?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
+          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1461884565039-631924867711?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
+          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1461884741551-ad97bea88672?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
+          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1461857313288-dd1aea912fd6?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
+          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1465237501645-dc958607f396?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
+          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1461885283715-7851eba48c56?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
+          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1465237616368-a7d299dddda3?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
+          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1464619238259-ca2dd91ce213?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
+          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
+          <div class="works__item works__item--03"><img src="https://images.unsplash.com/photo-1464618588910-71a841b67a21?dpr=2&amp;auto=format&amp;crop=entropy&amp;fit=crop&amp;h=400&amp;q=60&amp;cs=tinysrgb" class="works__item_picture--03"></div>
         </div>
       </div>
-      <!-- == END OF WORKS 03 ==-->
       <!--include slides/menu-02-->
       <!--include components/footers/04-->
       <!--include components/popups/video-->

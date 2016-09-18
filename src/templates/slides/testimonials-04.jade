@@ -3,63 +3,69 @@
 	.works__text This is only a small part of the reviews about my&nbsp;
 		a.hover-1(target="_blank", href="http://www.upwork.com/o/profiles/users/_~01c29dcb38d78fba62", onclick="yaCounter32612170.reachGoal('CLICK-UPWORK'); return true;") Upwork
 		| &nbsp;profile
-	.testimonials__arrows_box.testimonials__arrows_box--04
-		button.testimonials__arrow.testimonials__arrow--left.testimonials__arrow--04.testimonials__arrow--04--left.js-testimonials-prev-arrow--04(type="button", onclick="yaCounter32612170.reachGoal('CLICK-REVIEWS-LEFT'); return true;")
-		button.testimonials__arrow.testimonials__arrow--right.testimonials__arrow--04.testimonials__arrow--04--right.js-testimonials-next-arrow--04(type="button", onclick="yaCounter32612170.reachGoal('CLICK-REVIEWS-RIGHT'); return true;")
-	.testimonials__photos_box--04.js-slider.js-testimonials-photo-slider(data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "fade": false, "cssEase": "linear", "arrows": false, "asNavFor": ".js-testimonials-text-slider", "centerMode": true, "focusOnSelect": true, "responsive": [{"breakpoint": 500, "settings": {"slidesToShow": 3, "centerMode": false}}]}')
-		.testimonials__item_photo_box--04
-			.testimonials__item_photo.testimonials__item_photo--04(style="background-image:url(img/clients/vlad.jpg)")
-		.testimonials__item_photo_box--04
-			.testimonials__item_photo.testimonials__item_photo--04(style="background-image:url(img/clients/mathias.jpg)")
-		.testimonials__item_photo_box--04
-			.testimonials__item_photo.testimonials__item_photo--04(style="background-image:url(img/clients/corey.jpg)")
-		.testimonials__item_photo_box--04
-			.testimonials__item_photo.testimonials__item_photo--04(style="background-image:url(img/clients/mohamad.jpg)")
 
-	.testimonials__box.testimonials__box--04.js-slider.js-testimonials-text-slider(data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "fade": true, "cssEase": "linear", "arrows": true, "prevArrow" : ".js-testimonials-prev-arrow--04", "nextArrow": ".js-testimonials-next-arrow--04", "asNavFor": ".js-testimonials-photo-slider"}')
-		.testimonials__item.testimonials__item--04
-			span.testimonials__item_text.testimonials__item_text--04
-				| Yuriy is a very talented developer. He always finishes tasks ahead of schedule. This guy is so fast with tasks that I can hardly keep up. He also has amazing attention to detail and even suggests a lot of improvements and optimizations.
-			.testimonials__rating_box
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-			span.testimonials__item_name
-				| Vlad Bretgoltz
-		.testimonials__item.testimonials__item--04
-			span.testimonials__item_text.testimonials__item_text--04
-				| Yuriy is an excellent freelancer, who pays attention to details.
-				br
-				| Really good work!
-			.testimonials__rating_box
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-			span.testimonials__item_name
-				| Mathias Briquemont
-		.testimonials__item.testimonials__item--04
-			span.testimonials__item_text.testimonials__item_text--04
-				| Yuriy was fantastic to work with! Very communicative, attentive and gets the job done ahead of schedule. I would highly recommend Yuriy to anyone looking for front-end development using the Bootstrap framework. Will definitely be hiring again and again!!!
-			.testimonials__rating_box
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-			span.testimonials__item_name
-				| Corey Lewis
-		.testimonials__item.testimonials__item--04
-			span.testimonials__item_text.testimonials__item_text--04
-				| He did good job just the time he was sick but he did his work outstanding!
-			.testimonials__rating_box
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-				img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
-			span.testimonials__item_name
-				| Mohamad Tellawi
+	.slider-container
+		.testimonials__arrows_box.testimonials__arrows_box--04
+			button.testimonials__arrow.testimonials__arrow--left.testimonials__arrow--04.testimonials__arrow--04--left.js-testimonials-prev-arrow--04(type="button", onclick="yaCounter32612170.reachGoal('CLICK-REVIEWS-LEFT'); return true;")
+			button.testimonials__arrow.testimonials__arrow--right.testimonials__arrow--04.testimonials__arrow--04--right.js-testimonials-next-arrow--04(type="button", onclick="yaCounter32612170.reachGoal('CLICK-REVIEWS-RIGHT'); return true;")
+		.testimonials__photos_box--04.js-slider.js-testimonials-photo-slider(data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "fade": false, "cssEase": "linear", "arrows": false, "asNavFor": ".js-testimonials-text-slider", "centerMode": true, "focusOnSelect": true, "responsive": [{"breakpoint": 500, "settings": {"slidesToShow": 1}}]}')
+			.testimonials__item_photo_box--04
+				.testimonials__item_photo.testimonials__item_photo--04(style="background-image:url(img/clients/vlad.jpg)")
+			.testimonials__item_photo_box--04
+				.testimonials__item_photo.testimonials__item_photo--04(style="background-image:url(img/clients/mathias.jpg)")
+			.testimonials__item_photo_box--04
+				.testimonials__item_photo.testimonials__item_photo--04(style="background-image:url(img/clients/corey.jpg)")
+			.testimonials__item_photo_box--04
+				.testimonials__item_photo.testimonials__item_photo--04(style="background-image:url(img/clients/mohamad.jpg)")
+
+		.testimonials__box.testimonials__box--04.js-slider.js-testimonials-text-slider(data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "fade": true, "cssEase": "linear", "arrows": true, "prevArrow" : ".js-testimonials-prev-arrow--04", "nextArrow": ".js-testimonials-next-arrow--04", "asNavFor": ".js-testimonials-photo-slider"}')
+			.testimonials__item.testimonials__item--04
+				span.testimonials__item_text.testimonials__item_text--04
+					| Yuriy is a very talented developer. He always finishes tasks ahead of schedule. This guy is so fast with tasks that I can hardly keep up. He also has amazing attention to detail and even suggests a lot of improvements and optimizations.
+				.testimonials__rating_box
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+				span.testimonials__item_name
+					| Vlad Bretgoltz
+			.testimonials__item.testimonials__item--04
+				span.testimonials__item_text.testimonials__item_text--04
+					| Yuriy is an excellent freelancer&nbsp;
+					br
+					| who pays attention to details.
+					br
+					| Really good work!
+				.testimonials__rating_box
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+				span.testimonials__item_name
+					| Mathias Briquemont
+			.testimonials__item.testimonials__item--04
+				span.testimonials__item_text.testimonials__item_text--04
+					| Yuriy was fantastic to work with! Very communicative, attentive and gets the job done ahead of schedule. I would highly recommend Yuriy to anyone looking for Front-End development using the Bootstrap framework.
+					br
+					| Will definitely be hiring again and again!!!
+				.testimonials__rating_box
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+				span.testimonials__item_name
+					| Corey Lewis
+			.testimonials__item.testimonials__item--04
+				span.testimonials__item_text.testimonials__item_text--04
+					| He did good job just the time he was sick but he did his work outstanding!
+				.testimonials__rating_box
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+					img.testimonials__rating_star(src="img/icons/i--star--blue--solid.svg")
+				span.testimonials__item_name
+					| Mohamad Tellawi
