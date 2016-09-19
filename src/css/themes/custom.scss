@@ -89,6 +89,10 @@
 
 .testimonials--04 {
   background: #fff;
+  padding: 70px 0 50px;
+  @media (#{$max_phones}){
+    padding: 50px 30px;
+  }
 }
 
 .works--03 {
